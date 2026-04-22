@@ -39,7 +39,7 @@ export default async function MenuPage() {
               <Coffee className="w-10 h-10 text-primary" />
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-foreground tracking-tight">
-              Menu <span className="text-primary">Kopi Ceban</span>
+              Menu <span className="text-primary">Its By Me Coffee</span>
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
               Jelajahi berbagai pilihan kopi premium kami. Dari espresso klasik hingga racikan spesial, semua dibuat dengan penuh dedikasi.
@@ -101,7 +101,7 @@ export default async function MenuPage() {
                         </p>
                       </div>
                       <p className="text-sm text-muted-foreground/80 line-clamp-3 leading-relaxed">
-                        {item.description || "Nikmati cita rasa kopi terbaik dari Kopi Ceban."}
+                        {item.description || "Nikmati cita rasa kopi terbaik dari Its By Me Coffee."}
                       </p>
 
                       {/* CTA Button */}

@@ -29,7 +29,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     setIsClient(true);
     try {
-      const savedCart = localStorage.getItem("kopi-ceban-cart");
+      const savedCart = localStorage.getItem("itsbyme-coffee-cart");
       if (savedCart) {
         try {
           setItems(JSON.parse(savedCart));
@@ -47,7 +47,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (isClient) {
       try {
-        localStorage.setItem("kopi-ceban-cart", JSON.stringify(items));
+        localStorage.setItem("itsbyme-coffee-cart", JSON.stringify(items));
       } catch (e) {
         console.warn("Failed to save cart to localStorage:", e);
       }

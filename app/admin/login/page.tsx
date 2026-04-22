@@ -4,7 +4,7 @@ import { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Admin Login | Kopi Ceban",
+  title: "Admin Login | Its By Me Coffee",
   description: "Secure Access for Management",
 }
 
@@ -37,7 +37,7 @@ export default function LoginPage() {
                />
             </div>
             <h1 className="text-3xl font-bold text-foreground tracking-tight">
-              Kopi Ceban
+              Its By Me Coffee
             </h1>
             <p className="text-muted-foreground text-sm font-medium tracking-wide uppercase">
               Admin Panel Access

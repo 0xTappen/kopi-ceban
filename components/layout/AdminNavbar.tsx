@@ -24,7 +24,7 @@ export default function AdminNavbar() {
             <div className="relative h-8 w-8 rounded-full overflow-hidden shadow-sm border border-primary/20">
                 <Image src="/logo/logo.jpg" alt="Logo" fill className="object-cover" />
             </div>
-            <span>Kopi Ceban</span>
+            <span>Its By Me Coffee</span>
         </div>
       <div className="ml-auto flex items-center space-x-4">
         <ModeToggle />

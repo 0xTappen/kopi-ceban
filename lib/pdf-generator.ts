@@ -70,7 +70,7 @@ export function generateMonthlyReportPDF(data: ReportData): jsPDF {
 
   doc.setFontSize(14);
   doc.setFont("helvetica", "normal");
-  doc.text("KOPI CEBAN", pageWidth / 2, 28, { align: "center" });
+  doc.text("ITS BY ME COFFEE", pageWidth / 2, 28, { align: "center" });
 
   doc.setFontSize(11);
   doc.text(`Periode: ${data.period}`, pageWidth / 2, 36, { align: "center" });
@@ -228,7 +228,7 @@ export function generateMonthlyReportPDF(data: ReportData): jsPDF {
         doc.setFontSize(8);
         doc.setTextColor(...mutedColor);
         doc.text(
-          `Kopi Ceban - Halaman ${doc.getNumberOfPages()}`,
+          `Its By Me Coffee - Halaman ${doc.getNumberOfPages()}`,
           pageWidth / 2,
           doc.internal.pageSize.getHeight() - 10,
           { align: "center" }

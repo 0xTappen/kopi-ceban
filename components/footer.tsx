@@ -23,14 +23,14 @@ export function Footer() {
               <div className="relative h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden shadow-md group-hover:shadow-primary/40 transition-all duration-300 border border-primary/20">
                  <Image 
                     src="/logo/logo.jpg" 
-                    alt="Kopi Ceban Logo" 
+                    alt="Its By Me Coffee Logo" 
                     fill 
                     className="object-cover object-center"
                  />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold font-serif text-foreground tracking-wide leading-none">
-                  Kopi <span className="text-primary">Ceban</span>
+                  Its By Me <span className="text-primary">Coffee</span>
                 </span>
                 <span className="text-[10px] text-primary/80 tracking-widest uppercase mt-0.5 font-medium">Since 2024</span>
               </div>
@@ -65,12 +65,12 @@ export function Footer() {
             <div className="space-y-3 text-sm">
               <p className="text-muted-foreground">
                 <span className="font-semibold text-foreground block mb-1">Alamat:</span>
-                Panglima Polim, Bandar Lampung
+                Jl. Pahlawan No.12, Surabaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35122
               </p>
               <div>
                 <span className="font-semibold text-foreground block mb-2">Social Media:</span>
                 <a
-                  href="https://instagram.com/kopiceban_"
+                  href="https://instagram.com/itsbyme_coffee"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300 group"
@@ -78,7 +78,7 @@ export function Footer() {
                   <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30 transition-all">
                     <Instagram className="w-5 h-5" />
                   </div>
-                  <span className="group-hover:translate-x-0.5 transition-transform">@kopiceban_</span>
+                  <span className="group-hover:translate-x-0.5 transition-transform">@itsbyme_coffee</span>
                 </a>
               </div>
             </div>
@@ -88,7 +88,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-border text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Kopi Ceban. All rights reserved.
+            © 2025 Its By Me Coffee. All rights reserved.
           </p>
         </div>
       </div>

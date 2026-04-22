@@ -49,7 +49,7 @@ export default function Home() {
                 Nikmati Cita Rasa
                 <br />
                 <span className="text-primary bg-gradient-to-r from-primary to-yellow-600 bg-clip-text text-transparent">
-                  Kopi Ceban
+                  Its By Me Coffee
                 </span>
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -103,7 +103,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 space-y-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-foreground">
-              Mengapa <span className="text-primary">Kopi Ceban?</span>
+              Mengapa <span className="text-primary">Its By Me Coffee?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Komitmen kami untuk memberikan pengalaman kopi terbaik
@@ -141,7 +141,7 @@ export default function Home() {
               <MapPin className="w-6 h-6 text-primary" />
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-foreground">
-              Lokasi <span className="text-primary">Kopi Ceban</span>
+              Lokasi <span className="text-primary">Its By Me Coffee</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg">
               Temukan kami di sini dan rasakan kopi terbaik dengan harga bersahabat.
@@ -152,7 +152,7 @@ export default function Home() {
           <div className="relative w-full rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl shadow-primary/5 hover:scale-[1.01] transition-all duration-300 group">
             <div className="w-full h-[350px] sm:h-[450px] md:h-[550px] lg:h-[600px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15428.715329917913!2d105.2465243!3d-5.3819523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db004e2f49db%3A0xda9692f932d6a00d!2sKopi%20Ceban%20panglima%20polim!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.176!2d105.263!3d-5.395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dbe8f57f8977%3A0x5e0843e4999f8481!2sIts%20by%20me%20coffee!5e0!3m2!1sen!2sid!4v1713753600000!5m2!1sen!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -170,7 +170,7 @@ export default function Home() {
           <div className="text-center bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
             <p className="text-muted-foreground text-sm sm:text-base">
               <span className="font-bold text-foreground">Alamat: </span>
-              Panglima Polim, Bandar Lampung
+              Jl. Pahlawan No.12, Surabaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35122
             </p>
           </div>
         </div>

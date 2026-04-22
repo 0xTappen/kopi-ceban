@@ -90,13 +90,13 @@ const Receipt = forwardRef<HTMLDivElement, ReceiptProps>(
             <div style={{ display: "flex", justifyContent: "center", marginBottom: "12px" }}>
               <img
                 src="/logo/logo.jpg"
-                alt="Kopi Ceban"
+                alt="Its By Me Coffee"
                 style={{ width: "64px", height: "64px", borderRadius: "50%", objectFit: "cover" }}
               />
             </div>
           )}
           <h1 style={{ fontSize: "20px", fontWeight: "bold", color: "#cba35c", margin: "0" }}>
-            Kopi Ceban
+            Its By Me Coffee
           </h1>
           <p style={{ fontSize: "12px", color: "#666666", margin: "4px 0 0" }}>
             Panglima Polim
@@ -219,10 +219,10 @@ const Receipt = forwardRef<HTMLDivElement, ReceiptProps>(
             Terima kasih telah berbelanja di
           </p>
           <p style={{ fontSize: "18px", fontWeight: "bold", color: "#cba35c", margin: "4px 0" }}>
-            Kopi Ceban
+            Its By Me Coffee
           </p>
           <p style={{ fontSize: "12px", color: "#666666", marginTop: "8px" }}>
-            Follow us @kopiceban_
+            Follow us @itsbyme_coffee
           </p>
         </div>
       </div>

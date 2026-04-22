@@ -138,13 +138,13 @@ export function Navbar() {
               <div className="relative h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden shadow-lg shadow-primary/10 group-hover:shadow-primary/30 transition-all duration-500 border border-primary/20 group-hover:scale-105">
                 <Image
                   src="/logo/logo.jpg"
-                  alt="Kopi Ceban"
+                  alt="Its By Me Coffee"
                   fill
                   className="object-cover"
                 />
               </div>
               <span className="text-xl sm:text-2xl font-serif font-bold text-foreground tracking-wide">
-                Kopi <span className="text-primary">Ceban</span>
+                Its By Me <span className="text-primary">Coffee</span>
               </span>
             </Link>
 
@@ -261,7 +261,7 @@ export function Navbar() {
 
               {/* Bottom Decoration */}
               <div className="mt-auto mb-10 text-center">
-                  <p className="text-muted-foreground text-xs tracking-widest uppercase mb-2">Kopi Ceban App</p>
+                  <p className="text-muted-foreground text-xs tracking-widest uppercase mb-2">Its By Me Coffee App</p>
                   <div className="h-1 w-12 bg-primary/30 mx-auto rounded-full" />
               </div>
             </motion.div>

@@ -50,7 +50,7 @@ export default function AdminSidebar() {
           </div>
           <div className="flex flex-col">
             <h1 className="text-xl font-bold text-sidebar-foreground tracking-wide group-hover:text-sidebar-primary transition-colors">
-              Kopi Ceban
+              Its By Me Coffee
             </h1>
             <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Admin Panel</span>
           </div>

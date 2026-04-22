@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kopi Ceban - Kopi Premium Semua Orang",
-  description: "Nikmati kopi premium berkualitas dengan harga terjangkau. Kopi Ceban, solusi ngopi hemat rasa nikmat.",
+  title: "Its By Me Coffee - Nikmati Kopi Terbaik Anda",
+  description: "Nikmati cita rasa kopi premium terbaik di Its By Me Coffee. Solusi kopi berkualitas dengan suasana nyaman.",
   icons: {
     icon: "/favicon.jpg",
     shortcut: "/favicon.jpg",
