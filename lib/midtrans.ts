@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
 import { OrderStatus } from "@prisma/client";
+import crypto from "crypto";
 
 export const MIDTRANS_SERVER_KEY = process.env.MIDTRANS_SERVER_KEY || "";
 export const MIDTRANS_CLIENT_KEY = process.env.MIDTRANS_CLIENT_KEY || "";
@@ -41,6 +41,13 @@ export const getMidtransHeaders = () => {
   };
 };
 
+export interface MidtransItem {
+  menuId?: number | string;
+  price: number;
+  quantity: number;
+  name: string;
+}
+
 /**
  * Create Snap Transaction Token (for pop-up checkout)
  */
@@ -48,7 +55,7 @@ export const createSnapTransaction = async (
   orderCode: string,
   totalPrice: number,
   customerName: string,
-  items: any[]
+  items: MidtransItem[]
 ) => {
   const url = MIDTRANS_API_URL;
   
@@ -100,7 +107,6 @@ export const verifySignature = (
   grossAmount: string,
   signatureKey: string
 ): boolean => {
-  const crypto = require("crypto");
   const expectedSignature = crypto
     .createHash("sha512")
     .update(`${orderId}${statusCode}${grossAmount}${MIDTRANS_SERVER_KEY}`)
@@ -177,7 +183,7 @@ export const getTransactionStatus = async (orderId: string) => {
 export const logMidtransEvent = (
   eventType: "NOTIFICATION" | "STATUS_CHECK" | "ERROR",
   orderId: string,
-  details: Record<string, any>
+  details: Record<string, unknown>
 ) => {
   const timestamp = new Date().toISOString();
   const logEntry = {

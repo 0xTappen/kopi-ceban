@@ -42,6 +42,7 @@ export function useOrderNotification(options: UseOrderNotificationOptions = {}) 
     try {
       const storedEnabled = localStorage.getItem(STORAGE_KEY);
       if (storedEnabled !== null) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setIsEnabled(storedEnabled === "true");
       }
       

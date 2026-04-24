@@ -27,6 +27,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // Load from local storage on mount
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsClient(true);
     try {
       const savedCart = localStorage.getItem("itsbyme-coffee-cart");

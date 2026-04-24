@@ -3,6 +3,53 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
+// Coffee theme colors for particles
+const COLORS = ["#CBA35C", "#E6D5C3", "#2A1A12"];
+
+class Particle {
+  x: number;
+  y: number;
+  size: number;
+  speedX: number;
+  speedY: number;
+  color: string;
+  opacity: number;
+  canvasWidth: number;
+  canvasHeight: number;
+
+  constructor(canvasWidth: number, canvasHeight: number) {
+    this.canvasWidth = canvasWidth;
+    this.canvasHeight = canvasHeight;
+    this.x = Math.random() * canvasWidth;
+    this.y = Math.random() * canvasHeight;
+    this.size = Math.random() * 2 + 0.5; // Small, subtle
+    this.speedX = (Math.random() - 0.5) * 0.5;
+    this.speedY = (Math.random() - 0.5) * 0.5;
+    this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    this.opacity = Math.random() * 0.5 + 0.1;
+  }
+
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+
+    // Wrap around screen
+    if (this.x > this.canvasWidth) this.x = 0;
+    if (this.x < 0) this.x = this.canvasWidth;
+    if (this.y > this.canvasHeight) this.y = 0;
+    if (this.y < 0) this.y = this.canvasHeight;
+  }
+
+  draw(ctx: CanvasRenderingContext2D) {
+    ctx.fillStyle = this.color;
+    ctx.globalAlpha = this.opacity;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+}
+
 export const Particles = ({ className }: { className?: string }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -16,61 +63,17 @@ export const Particles = ({ className }: { className?: string }) => {
     let animationFrameId: number;
     let particles: Particle[] = [];
     
-    // Coffee theme colors for particles
-    const colors = ["#CBA35C", "#E6D5C3", "#2A1A12"]; 
-
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       initParticles();
     };
 
-    class Particle {
-      x: number;
-      y: number;
-      size: number;
-      speedX: number;
-      speedY: number;
-      color: string;
-      opacity: number;
-
-      constructor() {
-        this.x = Math.random() * canvas!.width;
-        this.y = Math.random() * canvas!.height;
-        this.size = Math.random() * 2 + 0.5; // Small, subtle
-        this.speedX = (Math.random() - 0.5) * 0.5;
-        this.speedY = (Math.random() - 0.5) * 0.5;
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-        this.opacity = Math.random() * 0.5 + 0.1;
-      }
-
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        // Wrap around screen
-        if (this.x > canvas!.width) this.x = 0;
-        if (this.x < 0) this.x = canvas!.width;
-        if (this.y > canvas!.height) this.y = 0;
-        if (this.y < 0) this.y = canvas!.height;
-      }
-
-      draw() {
-        if (!ctx) return;
-        ctx.fillStyle = this.color;
-        ctx.globalAlpha = this.opacity;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.globalAlpha = 1;
-      }
-    }
-
     const initParticles = () => {
       particles = [];
-      const particleCount = Math.min(window.innerWidth * 0.05, 100); // Responsive count
+      const particleCount = Math.min(window.innerWidth * 0.05, 100); 
       for (let i = 0; i < particleCount; i++) {
-        particles.push(new Particle());
+        particles.push(new Particle(canvas.width, canvas.height));
       }
     };
 
@@ -80,7 +83,7 @@ export const Particles = ({ className }: { className?: string }) => {
       
       particles.forEach((particle) => {
         particle.update();
-        particle.draw();
+        particle.draw(ctx);
       });
 
       animationFrameId = requestAnimationFrame(animate);

@@ -223,7 +223,7 @@ export function generateMonthlyReportPDF(data: ReportData): jsPDF {
         4: { cellWidth: 35, halign: "right" },
       },
       margin: { left: margin, right: margin },
-      didDrawPage: (data) => {
+      didDrawPage: (_data) => {
         // Footer on each page
         doc.setFontSize(8);
         doc.setTextColor(...mutedColor);

@@ -11,6 +11,7 @@
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@next-auth/prisma-adapter": "^1.0.7",
+    "@next/swc-linux-x64-gnu": "^16.2.4",
     "@prisma/client": "5.22.0",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-avatar": "^1.1.11",
@@ -54,6 +55,7 @@
     "@types/qrcode": "^1.5.6",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "baseline-browser-mapping": "^2.10.21",
     "eslint": "^9",
     "eslint-config-next": "16.0.8",
     "postcss": "^8.5.6",
