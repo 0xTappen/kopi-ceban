@@ -22,7 +22,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3 group w-fit">
               <div className="relative h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden shadow-md group-hover:shadow-primary/40 transition-all duration-300 border border-primary/20">
                  <Image 
-                    src="/logo/logo.jpg" 
+                    src="/logo.png" 
                     alt="Its By Me Coffee Logo" 
                     fill 
                     className="object-cover object-center"

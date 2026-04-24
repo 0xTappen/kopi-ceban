@@ -89,7 +89,7 @@ const Receipt = forwardRef<HTMLDivElement, ReceiptProps>(
           {showLogo && (
             <div style={{ display: "flex", justifyContent: "center", marginBottom: "12px" }}>
               <img
-                src="/logo/logo.jpg"
+                src="/logo.png"
                 alt="Its By Me Coffee"
                 style={{ width: "64px", height: "64px", borderRadius: "50%", objectFit: "cover" }}
               />

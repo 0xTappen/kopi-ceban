@@ -22,7 +22,7 @@ export default function AdminNavbar() {
         <MobileSidebar />
         <div className="flex items-center gap-3 lg:hidden text-primary font-bold ml-2">
             <div className="relative h-8 w-8 rounded-full overflow-hidden shadow-sm border border-primary/20">
-                <Image src="/logo/logo.jpg" alt="Logo" fill className="object-cover" />
+                <Image src="/logo.png" alt="Logo" fill className="object-cover" />
             </div>
             <span>Its By Me Coffee</span>
         </div>

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Kopi Ceban](public/logo/logo.jpg)
+![Kopi Ceban](public/logo.png)
 
 **Aplikasi pemesanan kopi modern dengan UI dark coffee aesthetic**
 

@@ -137,7 +137,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-3 group relative z-50">
               <div className="relative h-10 w-10 sm:h-12 sm:w-12 rounded-full overflow-hidden shadow-lg shadow-primary/10 group-hover:shadow-primary/30 transition-all duration-500 border border-primary/20 group-hover:scale-105">
                 <Image
-                  src="/logo/logo.jpg"
+                  src="/logo.png"
                   alt="Its By Me Coffee"
                   fill
                   className="object-cover"

@@ -3,17 +3,17 @@
     "short_name": "Its By Me Coffee",
     "icons": [
         {
-            "src": "/favicon.jpg",
+            "src": "/favicon.png",
             "sizes": "32x32",
             "type": "image/jpeg"
         },
         {
-            "src": "/icon.jpg",
+            "src": "/icon.png",
             "sizes": "192x192",
             "type": "image/jpeg"
         },
         {
-            "src": "/logo/logo.jpg",
+            "src": "/logo.png",
             "sizes": "512x512",
             "type": "image/jpeg"
         }

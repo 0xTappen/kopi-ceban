@@ -41,7 +41,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 animate-fade-in shadow-lg shadow-primary/5">
                 <div className="relative w-5 h-5 rounded-full overflow-hidden">
-                   <Image src="/logo/logo.jpg" alt="Logo" fill className="object-cover" />
+                   <Image src="/logo.png" alt="Logo" fill className="object-cover" />
                 </div>
                 <span className="text-sm font-semibold text-primary tracking-wide uppercase">Since 2024</span>
               </div>

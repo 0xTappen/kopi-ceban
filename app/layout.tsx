@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   title: "Its By Me Coffee - Nikmati Kopi Terbaik Anda",
   description: "Nikmati cita rasa kopi premium terbaik di Its By Me Coffee. Solusi kopi berkualitas dengan suasana nyaman.",
   icons: {
-    icon: "/favicon.jpg",
-    shortcut: "/favicon.jpg",
-    apple: "/apple-touch-icon.jpg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
 };

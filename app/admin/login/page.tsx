@@ -30,7 +30,7 @@ export default function LoginPage() {
           <div className="text-center mb-8 space-y-2">
             <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full shadow-lg mb-6 ring-4 ring-primary/20 overflow-hidden fade-in bg-background">
                <Image 
-                  src="/logo/logo.jpg" 
+                  src="/logo.png" 
                   alt="Admin Logo" 
                   fill 
                   className="object-cover object-center hover:scale-110 transition-transform duration-700"
